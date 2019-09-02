@@ -1,7 +1,7 @@
 # User model
 class User < ApplicationRecord
   # Associations
-  has_many :microposts
+  has_many :microposts, dependent: :destroy
   # attribute accessors
   attr_accessor :remember_token, :activation_token, :reset_token
   before_save :downcase_email
