@@ -27,6 +27,8 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '3.1.13'
 gem 'faker'
+gem 'carrierwave'
+gem 'mini_magick'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
 # Use ActiveStorage variant
@@ -61,6 +63,7 @@ group :test do
 end
 group :production do
   gem 'pg'
+  gem 'fog'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
